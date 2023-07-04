@@ -1,8 +1,7 @@
-# A Guide to User Authentication and Session Management
-## React, Express, and Sequelize
+# A Guide to User Authentication and Session Management (React + Express)
 
 ## Overview
-This repository is dedicated to demonstrating various use cases related to user authentication and session management using React and Express. 
+This repository demonstrates how to implement various common use cases related to user authentication and session management using React, Express, and Postgresql (via Sequelize). 
 
 The primary use cases that will be covered include:
 
