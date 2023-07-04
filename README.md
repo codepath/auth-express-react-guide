@@ -1,4 +1,5 @@
-# User Authentication and Session Management Repository 
+# A Guide to User Authentication and Session Management
+## React, Express, and Sequelize
 
 ## Overview
 This repository is dedicated to demonstrating various use cases related to user authentication and session management using React and Express. 
