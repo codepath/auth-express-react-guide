@@ -9,7 +9,7 @@ function Main() {
     const [form, setForm] = useState({
       title: '',
       content: '',
-      userId: '',
+      credentials: 'include'
     });
   
     useEffect(() => {
@@ -34,6 +34,7 @@ function Main() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
+        credentials: 'include'
       });
       const newPost = await response.json();
       setPosts([newPost, ...posts]);
@@ -71,13 +72,6 @@ function Main() {
                 name="content"
                 placeholder="Content"
                 value={form.content}
-                onChange={handleChange}
-            />
-            <input
-                type="text"
-                name="userId"
-                placeholder="User Id"
-                value={form.userId}
                 onChange={handleChange}
             />
             <button type="submit">Submit</button>
