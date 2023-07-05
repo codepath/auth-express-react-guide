@@ -1,3 +1,10 @@
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .signup-form {
     display: flex;
     flex-direction: column;
