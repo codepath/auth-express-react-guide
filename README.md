@@ -50,9 +50,27 @@ In this milestone, we'll cover the basic scaffolding that you'll need in order t
 
 3. Look at server.js, and copy the sections related to cors, sessions, and adding the userRoutes.
 
-[![Demo Video](https://raw.githubusercontent.com/codepath/auth-express-react-guide/main/images/demo.png)](https://www.loom.com/share/57bd05632e9b4b92935e044c6eebff59?sid=c11c299b-02f3-4624-b3a1-591f283b3c2f "Demo Video - Click to Watch!")
+[![Demo Video](https://github.com/codepath/auth-express-react-guide/blob/main/images/1_basic_login.png?raw=true)](https://www.loom.com/share/a7d5de4f73fb40d3b06c75774ae3332f?sid=431bfb78-4e96-484e-9b20-f4aa920415da "Milestone 1 Video - Click to Watch!")
 
-### Updating Website After Login
-[![Updating Website After Login](https://via.placeholder.com/900x600.png)](https://www.loom.com/share/yourvideoid "Updating Website After Login - Click to Watch!")
+### Milestone #2: Updating Website After Login
+
+**React**
+
+1. Open App.jsx, and look at the UserContext.
+2. Open components/Main/Main.jsx, and look at the line `useContext(UserContext)`.
+
+[![Demo Video](https://github.com/codepath/auth-express-react-guide/blob/main/images/1_basic_login.png?raw=true)](https://www.loom.com/share/a7d5de4f73fb40d3b06c75774ae3332f?sid=431bfb78-4e96-484e-9b20-f4aa920415da "Milestone 1 Video - Click to Watch!")
+
+### Milestone #3: Session management
+
+**React**
+
+1. Open browser, and look at the cookies.
+
+**Express**
+
+1. Open routes/users.js, and look at req.session. Open server.js, and look how POST /posts uses req.session
+
+[![Demo Video](https://github.com/codepath/auth-express-react-guide/blob/main/images/1_basic_login.png?raw=true)](https://www.loom.com/share/a7d5de4f73fb40d3b06c75774ae3332f?sid=431bfb78-4e96-484e-9b20-f4aa920415da "Milestone 1 Video - Click to Watch!")
 
 
