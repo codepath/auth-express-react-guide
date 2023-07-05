@@ -9,16 +9,14 @@ const SignupForm = () => {
   const [password, setPassword] = useState('');
 
   const { updateUser } = useContext(UserContext);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Assuming the host configuration is stored in a variable named `host`
-    const host = process.env.REACT_APP_API_HOST;
-
     try {
       // Make the signup API request
-      const response = await fetch(`${host}/users`, {
+      const response = await fetch(`http://localhost:3000/users`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
