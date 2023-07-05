@@ -14,9 +14,7 @@ The primary use cases that will be covered include:
 
 ## Demo
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/4c4d8dbfdd944607b9dcb1938907affe?sid=ff4014e1-05fa-4d19-9c4a-eff9c37e2464" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-[![Demo Video](https://via.placeholder.com/900x600.png)](https://www.loom.com/share/yourvideoid "Demo Video - Click to Watch!")
+[![Demo Video](https://raw.githubusercontent.com/codepath/auth-express-react-guide/main/images/demo.png)](https://www.loom.com/share/57bd05632e9b4b92935e044c6eebff59?sid=c11c299b-02f3-4624-b3a1-591f283b3c2f "Demo Video - Click to Watch!")
 
 ## Background
 This section will discuss the architectural choices made during the creation of this repository. These include the choice between sessions/cookies vs jwt vs Auth0/Passport, and the pros and cons of each method.
