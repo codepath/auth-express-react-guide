@@ -42,11 +42,11 @@ const SignupForm = () => {
         navigate('/');
       } else {
         // Handle signup failure case
-        console.log('Signup failed');
+        alert('Signup failed');
       }
     } catch (error) {
       // Handle any network or API request errors
-      console.log('An error occurred:', error);
+      alert('Signup failed: ' + error);
     }
   };
 
