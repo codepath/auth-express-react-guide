@@ -1,46 +1,76 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .new-post-form, .post {
-    width: 500px;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .new-post-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .new-post-form input, .new-post-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .new-post-form button {
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .new-post-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .posts-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info a {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.user-info button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
+
+.new-post-form,
+.post {
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px; /* Adjust the margin value as needed */
+}
+
+.new-post-form input,
+.new-post-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.new-post-form button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.new-post-form button:hover {
+  background-color: #0056b3;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

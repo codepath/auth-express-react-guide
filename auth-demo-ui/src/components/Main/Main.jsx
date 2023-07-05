@@ -1,7 +1,10 @@
 import "./Main.css"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { UserContext } from "../../UserContext.js";
+import { Link } from "react-router-dom";
 
 function Main() {
+    const { user, updateUser } = useContext(UserContext);
     const [posts, setPosts] = useState([]);
     const [form, setForm] = useState({
       title: '',
@@ -36,8 +39,26 @@ function Main() {
       setPosts([newPost, ...posts]);
     };
 
+    const handleLogout = () => {
+      // Perform logout logic here
+      // Example: Clear user data from localStorage, reset user state, etc.
+      updateUser(null);
+    };
+  
     return (
-      <div className='main'>
+      <div className="main">
+      <header className="header">
+        <div className="user-info">
+          {user ? (
+            <>
+              <span>Hi {user.username}! |</span>
+              <button onClick={handleLogout}>Logout</button>
+            </>
+          ) : (
+            <Link to="/login">Login</Link>
+          )}
+        </div>
+      </header>
         <form className="new-post-form" onSubmit={handleSubmit}>
             <input
                 type="text"
