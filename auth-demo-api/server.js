@@ -6,6 +6,7 @@ import morgan from 'morgan';
 import { sequelize } from './database.js';
 import { User, Post } from './models/index.js';
 import userRoutes from './routes/users.js';
+import SequelizeStoreInit from 'connect-session-sequelize';
 
 const app = express();
 
@@ -13,14 +14,24 @@ app.use(cors())
 app.use(express.json()); // Middleware for parsing JSON bodies from HTTP requests
 app.use(morgan())
 
+const SequelizeStore = SequelizeStoreInit(session.Store);
+const sessionStore = new SequelizeStore({
+  db: sequelize
+});
+
 // Session middleware
 app.use(
   session({
     secret: 'your-secret-key',
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: false,
+    store: sessionStore,
+    cookie: {
+      expires: new Date(Date.now() + (365 * 24 * 60 * 60 * 1000)) // 1 year in milliseconds
+    }
   })
 );
+sessionStore.sync();
 
 app.use(userRoutes);
 
